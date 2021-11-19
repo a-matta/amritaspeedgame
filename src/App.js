@@ -4,8 +4,12 @@ import GameOver from "./component/GameOver.js";
 import { circles } from "./component/circles";
 
 import click from "./sounds/Mario Coin Sound - Sound Effect (HD).mp3";
+import gameOverSound from "./sounds/Super Mario Bros. Music - Miss _ Game Over (1).mp3";
+
 
 let clickSound = new Audio(click);
+let gameOver = new Audio(gameOverSound);
+
 
 const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -19,6 +23,7 @@ class App extends Component {
     pace: 1500,
     rounds: 0,
     gameStart: false,
+    gameStop:true,
   };
 
   timer = undefined;
@@ -72,21 +77,23 @@ class App extends Component {
   };
 
   startHandler = () => {
-    /*     gameStartSound.play();
-        clickSound.loop = true;
-     */ this.nextCircle();
+
+      this.nextCircle();
     this.setState({
       gameStart: true,
+      gameStop:false,
     });
   };
 
   stopHandler = () => {
     clearTimeout(this.timer);
+    gameOver.play();
 
     this.setState({
       gameOver: true,
       current: 0,
       gameStart: false,
+      gameStop: true,
     });
   };
 
@@ -123,7 +130,7 @@ class App extends Component {
             <button disabled={this.state.gameStart} onClick={this.startHandler}>
               Start
             </button>
-            <button onClick={this.stopHandler}>Stop</button>
+            <button onClick={this.state.gameStop}>Stop</button>
             <footer className="footer">&copy; Copyright 2021 Amrita Matta</footer>
           </div>
         </div>
