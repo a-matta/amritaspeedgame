@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b1874886.chunk.css",
+    "main.js": "/static/js/main.b4182551.chunk.js",
+    "main.js.map": "/static/js/main.b4182551.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.93f57be9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.93f57be9.js.map",
+    "static/js/2.78e6f0e5.chunk.js": "/static/js/2.78e6f0e5.chunk.js",
+    "static/js/2.78e6f0e5.chunk.js.map": "/static/js/2.78e6f0e5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b1874886.chunk.css.map": "/static/css/main.b1874886.chunk.css.map",
+    "static/js/2.78e6f0e5.chunk.js.LICENSE.txt": "/static/js/2.78e6f0e5.chunk.js.LICENSE.txt",
+    "static/media/Mario Coin Sound - Sound Effect (HD).a8ce0352.mp3": "/static/media/Mario Coin Sound - Sound Effect (HD).a8ce0352.mp3",
+    "static/media/Super Mario Bros. Music - Miss _ Game Over (1).37591ed7.mp3": "/static/media/Super Mario Bros. Music - Miss _ Game Over (1).37591ed7.mp3",
+    "static/media/index.css": "/static/media/pointer.b336afd1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93f57be9.js",
+    "static/js/2.78e6f0e5.chunk.js",
+    "static/css/main.b1874886.chunk.css",
+    "static/js/main.b4182551.chunk.js"
+  ]
+}
