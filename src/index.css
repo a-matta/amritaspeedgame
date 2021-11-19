@@ -1,13 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Press Start 2P", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+          to right,
+          #f12711,
+          #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+p,
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.circle {
+  background: #456bd9;
+  border: 0.1875em solid #0f1c3f;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: grab;
+  margin: 1rem;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle:active {
+  box-shadow: inset 0 0 40px rgb(96, 96, 96);
+}
+
+.active {
+  box-shadow: 0 0 25px yellowgreen;
+  background-image: url("images/Vector.svg");
+  background-size: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gamepopup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
+}
+.gamepopup p {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.closebtn {
+  background: lightgrey;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  align-items: center;
 }
